@@ -1,0 +1,149 @@
+.digital-dashboard {
+  background-color: #1a1a1a;
+  color: #0f0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.digital-meter {
+  background: #000;
+  border: 2px solid #0f0;
+  padding: 15px;
+  width: 140px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+.digital-meter h5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #0f0;
+}
+
+.digital-meter .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.positive {
+  color: #0f0;
+}
+
+.negative {
+  color: #f55;
+}
+
+.behavior-log .log-entry {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.behavior-log .good-behavior {
+  border-left-color: green;
+}
+
+.behavior-log .bad-behavior {
+  border-left-color: red;
+}
+
+.score-badge {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.excellent {
+  background-color: #d4f7d4;
+  color: green;
+}
+
+.good {
+  background-color: #fff3cd;
+  color: goldenrod;
+}
+
+.needs-improvement {
+  background-color: #f8d7da;
+  color: red;
+}
+
+.dashboard-red {
+  background-color: #ffeaea;
+}
+
+.traffic-light-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.light.red {
+  background-color: red;
+}
+
+.light.green {
+  background-color: green;
+}
+
+.controls-container {
+  margin-top: 20px;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+
+/* Traffic Light Styles */
+.traffic-light-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+  background: #222; /* Optional: Add a dark background for better contrast */
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  display: none; /* Hide by default */
+}
+
+.light.active {
+  display: block; /* Show only the active light */
+}
+
+.light.red {
+  background-color: red;
+}
+
+.light.green {
+  background-color: green;
+}
