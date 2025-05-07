@@ -24,10 +24,10 @@ const App = () => {
           const web3 = new Web3(window.ethereum);
           await window.ethereum.request({ method: 'eth_requestAccounts' });
           const accounts = await web3.eth.getAccounts();
-          const contractAddress = "0xBB03f30F739F1e5f0364135f524B32A3Effa8342";
+          const contractAddress = "0x2b29b1228890b8d77a483C62ae81D73Db4AdA32F";
 
           // ABI updated to use int256 for driving points
-          const contractABI =  [
+          const contractABI = [
             {
               "inputs": [],
               "stateMutability": "nonpayable",
